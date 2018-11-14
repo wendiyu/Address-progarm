@@ -11,6 +11,7 @@
 
 def address(streetAddress, city = '', provine = '', postalCode = '', apartmentNumber = ''):
 # address info
+
     if (apartmentNumber == ''):
       print (streetAddress + ' ' + city + ' ' + provine + ' ' + postalCode)
 

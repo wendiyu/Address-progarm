@@ -1,0 +1,32 @@
+#
+#Created by: Wendi Yu
+#Created on: Nov-14-2018
+#
+#This progarm is the solution for display address
+#
+#Created by: Wendi Yu
+#Created on: Nov-14-2018
+#
+#This progarm is the solution for display address
+
+def address(streetAddress, city = '', provine = '', postalCode = '', apartmentNumber = ''):
+# address info
+    if (apartmentNumber == ''):
+      print (streetAddress + ' ' + city + ' ' + provine + ' ' + postalCode)
+
+    else:
+      print (apartmentNumber + ' '  + streetAddress + ' ' + city + ' ' + provine + ' ' + postalCode )
+
+street_address = input ("Enter street address: ")
+city_name = input ("Enter your city name: ")
+provine_name = input("Enter your provine: ")
+postalCode_name = input("Enter your postal code: ")
+apartment_address = input("Do you have an apartment number? If yes, enter 1. If no, enter 2. (1 or 2): ")
+
+if apartment_address == '1':
+  apartment_number = input("Enter your apartment number: ")
+  address(street_address, city = city_name, provine = provine_name, postalCode = provine_name, apartmentNumber = apartment_number)
+else:
+  address(street_address, city = city_name, provine = provine_name, postalCode = postalCode_name)
+
+input()
